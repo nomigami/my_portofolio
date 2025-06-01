@@ -1,13 +1,26 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function WorksPage() {
   const works = [
-    'Internet Of Things Smart Farming',
-    'Monitoring Website with Next.js',
-    'Monitoring Website with PHP',
-    'Monitoring Website with HTML+CSS',
+    {
+      title: 'Internet Of Things Smart Farming',
+      slug: 'smart-farming',
+    },
+    {
+      title: 'Monitoring Website with Next.js',
+      slug: 'nextjs-monitoring',
+    },
+    {
+      title: 'Monitoring Website with PHP',
+      slug: 'php-monitoring',
+    },
+    {
+      title: 'Monitoring Website with HTML+CSS',
+      slug: 'htmlcss-monitoring',
+    },
   ];
 
   return (
@@ -30,21 +43,24 @@ export default function WorksPage() {
       {/* Works List */}
       <div className="w-full max-w-3xl flex flex-col gap-6">
         {works.map((project, index) => (
-          <motion.div
-            key={index}
-            className="bg-white/5 backdrop-blur-lg text-gray-100 px-6 py-5 rounded-2xl shadow-xl hover:shadow-2xl hover:bg-white/10 transition duration-300 cursor-pointer"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              delay: 0.2 * index,
-              duration: 0.6,
-              ease: 'easeOut',
-            }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <h2 className="text-xl font-semibold text-center">{project}</h2>
-          </motion.div>
+          <Link key={project.slug} href={`/works/${project.slug}`}>
+            <motion.div
+              className="bg-white/5 backdrop-blur-lg text-gray-100 px-6 py-5 rounded-2xl shadow-xl hover:shadow-2xl hover:bg-white/10 transition duration-300 cursor-pointer"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.2 * index,
+                duration: 0.6,
+                ease: 'easeOut',
+              }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <h2 className="text-xl font-semibold text-center">
+                {project.title}
+              </h2>
+            </motion.div>
+          </Link>
         ))}
       </div>
     </motion.section>
