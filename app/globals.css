@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animasi teks masuk dari bawah */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 5s ease-out forwards;
+}
+
+/* Animasi background gambar berganti */
+@keyframes bgSlide {
+  0% {
+    background-image: url('/images/daun.jpg');
+  }
+  33% {
+    background-image: url('/images/jalan.jpg');
+  }
+  66% {
+    background-image: url('/images/daun2.jpg');
+  }
+  100% {
+    background-image: url('/images/gunung.jpg');
+  }
+}
+
+.animate-bg-slide {
+  animation: bgSlide 20s infinite ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
