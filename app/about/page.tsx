@@ -94,7 +94,7 @@ export default function AboutSection() {
         {/* Deskripsi */}
         <div className="flex-1 max-w-2xl text-left">
           <motion.p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-            I am passionate about the intersection of creativity and technology. My journey in Informatics Engineering is driven by a deep curiosity to build innovative solutions. I believe in lifelong learning, teamwork, and making an impact through digital products.
+            I am passionate about the intersection. of creativity and technology. My journey in Informatics Engineering is driven by a deep curiosity to build innovative solutions. I believe in lifelong learning, teamwork, and making an impact through digital products.
           </motion.p>
         </div>
 
