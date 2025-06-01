@@ -28,9 +28,9 @@ export default function AboutSection() {
       
       {/* Bagian Atas - Foto dan Informasi */}
       <div className="flex flex-col md:flex-row items-start justify-center gap-16">
-        {/* Foto Utama */}
+        {/* Foto Utama dengan efek hover/tap */}
         <motion.div
-          className="md:w-1/2 flex justify-center"
+          className="md:w-1/2 flex justify-center group"
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -41,7 +41,7 @@ export default function AboutSection() {
             alt="About Me"
             width={300}
             height={300}
-            className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale rounded shadow-lg"
+            className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
           />
         </motion.div>
 
@@ -94,37 +94,47 @@ export default function AboutSection() {
         {/* Deskripsi */}
         <div className="flex-1 max-w-2xl text-left">
           <motion.p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-            I am passionate about the intersection. of creativity and technology. My journey in Informatics Engineering is driven by a deep curiosity to build innovative solutions. I believe in lifelong learning, teamwork, and making an impact through digital products.
+            I am passionate about the intersection of creativity and technology. My journey in Informatics Engineering is driven by a deep curiosity to build innovative solutions. I believe in lifelong learning, teamwork, and making an impact through digital products.
           </motion.p>
         </div>
 
-        {/* Foto Square */}
-        <Image
-          src="/images/daun.jpg"
-          alt="Additional Photo"
-          width={300}
-          height={300}
-          className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale rounded shadow-lg"
-        />
+        {/* Foto Square dengan efek hover/tap */}
+        <div className="group">
+          <Image
+            src="/images/daun.jpg"
+            alt="Additional Photo"
+            width={300}
+            height={300}
+            className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
+          />
+        </div>
       </motion.div>
 
-      {/* Maps */}
+      {/* Maps dengan overlay abu-abu tipis */}
       <motion.div
-        className="w-full h-[400px] rounded-lg overflow-hidden shadow-xl"
+        className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-xl"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
       >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.134618758514!2d110.81816347418307!3d-7.5585315744252195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a15cbcd3a1457%3A0x5558c7d4cbf9d8bb!2sUniversitas%20Duta%20Bangsa%20Surakarta!5e0!3m2!1sen!2sid!4v1717220222373!5m2!1sen!2sid"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div className="rounded-lg overflow-hidden shadow-lg border border-gray-700">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.7329645935074!2d110.82946559999999!3d-7.604011799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a170010484fe9%3A0x67ef3d3d7fda67c5!2sYoga%20ganteng!5e0!3m2!1sid!2sid!4v1748808289033!5m2!1sid!2sid"
+            width="100%"
+            height="400"
+            style={{
+              border: 0,
+              filter: 'grayscale(0.6) brightness(0.9)',
+            }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+
+        {/* Overlay abu-abu tipis */}
+        <div className="absolute inset-0 bg-gray-900 opacity-20 pointer-events-none"></div>
       </motion.div>
     </section>
   );
