@@ -16,7 +16,7 @@ export default function NextjsMonitoringPage() {
       </motion.h1>
 
       <Image
-        src="/images/nextjs-monitoring.jpg"
+        src="/images/monitoringjs.png"
         alt="Next.js Monitoring"
         width={800}
         height={500}
