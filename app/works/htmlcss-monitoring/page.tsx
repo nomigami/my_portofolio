@@ -16,7 +16,7 @@ export default function HtmlCssMonitoringPage() {
       </motion.h1>
 
       <Image
-        src="/images/htmlcss-monitoring.jpg"
+        src="/images/monitoringhtml.jpg"
         alt="HTML CSS Monitoring"
         width={800}
         height={500}

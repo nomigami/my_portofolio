@@ -16,7 +16,7 @@ export default function PhpMonitoringPage() {
       </motion.h1>
 
       <Image
-        src="/images/php-monitoring.jpg"
+        src="/images/monitoringphp.png"
         alt="PHP Monitoring"
         width={800}
         height={500}
