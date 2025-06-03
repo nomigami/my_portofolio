@@ -45,3 +45,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+html, body {
+  transition: background 0.4s ease;
+}

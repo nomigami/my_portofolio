@@ -2,8 +2,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Footer from '../components/Footer'; // pastikan path-nya sesuai
-import Navbar from '../components/Navbar'; // jika punya navbar global
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import PageWrapper from '../components/PageWrapper'; // ini baru
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,13 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-black text-white flex flex-col min-h-screen`}>
-        {/* Navbar global jika ada */}
         <Navbar />
-
-        {/* Konten halaman */}
-        <main className="flex-grow">{children}</main>
-
-        {/* Footer di bagian bawah */}
+        <main className="flex-grow">
+          <PageWrapper>{children}</PageWrapper>
+        </main>
         <Footer />
       </body>
     </html>

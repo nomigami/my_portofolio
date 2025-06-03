@@ -21,6 +21,10 @@ export default function WorksPage() {
       title: 'Monitoring Website with HTML+CSS',
       slug: 'htmlcss-monitoring',
     },
+     {
+      title: 'Website product with Next.js',
+      slug: 'product-nextjs',
+    },
   ];
 
   return (
