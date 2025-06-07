@@ -24,7 +24,7 @@ export default function ProductnextjsPage() {
       />
 
       <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
-        Website ini dibangun menggunakan next.js dan supabase sebagai backendnya untuk menyimpan data dari contact
+        Website ini dibangun. menggunakan next.js dan supabase sebagai backendnya untuk menyimpan data dari contact
       </p>
     </section>
   );
