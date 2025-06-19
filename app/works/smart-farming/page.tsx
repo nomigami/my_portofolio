@@ -16,7 +16,7 @@ export default function SmartFarmingPage() {
       </motion.h1>
 
       <Image
-        src="/images/smart-farming.jpg"
+        src="/images/smartfarming.jpg"
         alt="Smart Farming Project"
         width={800}
         height={500}
