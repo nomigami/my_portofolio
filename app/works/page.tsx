@@ -27,7 +27,7 @@ export default function WorksPage() {
     },
     {
       title: "Freelance Pengajar Robotik - Sentral Robotik.id",
-      slug: "freelance-robotics-teacher",
+      slug: "Freelance",
     },
   ];
 
