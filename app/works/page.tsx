@@ -1,29 +1,33 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function WorksPage() {
   const works = [
     {
-      title: 'Internet Of Things Smart Farming',
-      slug: 'smart-farming',
+      title: "Internet Of Things Smart Farming",
+      slug: "smart-farming",
     },
     {
-      title: 'Monitoring Website with Next.js',
-      slug: 'nextjs-monitoring',
+      title: "Monitoring Website with Next.js",
+      slug: "nextjs-monitoring",
     },
     {
-      title: 'Monitoring Website with PHP',
-      slug: 'php-monitoring',
+      title: "Monitoring Website with PHP",
+      slug: "php-monitoring",
     },
     {
-      title: 'Monitoring Website with HTML+CSS',
-      slug: 'htmlcss-monitoring',
+      title: "Monitoring Website with HTML+CSS",
+      slug: "htmlcss-monitoring",
     },
-     {
-      title: 'Website product with Next.js',
-      slug: 'product-nextjs',
+    {
+      title: "Website product with Next.js",
+      slug: "product-nextjs",
+    },
+    {
+      title: "Freelance Pengajar Robotik - Sentral Robotik.id",
+      slug: "freelance-robotics-teacher",
     },
   ];
 
@@ -32,7 +36,7 @@ export default function WorksPage() {
       className="min-h-screen flex flex-col justify-center items-center bg-black text-white px-4 py-24"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: 'easeOut' }}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
       {/* Title */}
       <motion.h1
@@ -55,7 +59,7 @@ export default function WorksPage() {
               transition={{
                 delay: 0.2 * index,
                 duration: 0.6,
-                ease: 'easeOut',
+                ease: "easeOut",
               }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
