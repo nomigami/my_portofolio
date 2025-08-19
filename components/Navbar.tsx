@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4 flex justify-center items-center space-x-8">
         <Link href="/" className="hover:text-gray-400 transition">Home</Link>
         <Link href="/about" className="hover:text-gray-400 transition">About</Link>
-        <Link href="/works" className="hover:text-gray-400 transition">Works</Link>
+        <Link href="/works" className="hover:text-gray-400 transition">Projects & Works</Link>
         <Link href="/contact" className="hover:text-gray-400 transition">Contact</Link>
       </div>
     </nav>
