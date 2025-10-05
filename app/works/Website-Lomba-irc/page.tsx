@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export default function SmartFarmingPage() {
+export default function WebsiteLombaIrcPage() {
   return (
     <section className="min-h-screen px-6 py-24 bg-black text-white flex flex-col items-center gap-12">
       <motion.h1
