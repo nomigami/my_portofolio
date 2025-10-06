@@ -29,6 +29,10 @@ export default function WorksPage() {
       title: "Freelance Pengajar Robotik - Sentral Robotik.id",
       slug: "Freelance",
     },
+     {
+      title: "Website Innovation Robotic Competition - MtsN 2 Sukoharjo",
+      slug: "Website-Lomba",
+    },
   ];
 
   return (
