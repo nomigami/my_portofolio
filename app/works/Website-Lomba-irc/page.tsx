@@ -32,7 +32,7 @@ export default function WebsiteLombaIrcPage() {
       />
 
       <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
-        Project ini menggunakan teknologi IoT untuk memonitor dan mengendalikan sistem pertanian secara otomatis, seperti kelembaban tanah, suhu, dan penyiraman tanaman.
+        Project ini digunakan untuk profile lombva dan pendaftaran bagi peserta yang ini mengikuti lomba ini, lomba ini tingkatan nasional jadi seluruh pelajar di indonesia bisa bergabung dan menunjukkan kemampuannya masing-masing.
       </p>
     </section>
   );
