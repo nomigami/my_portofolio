@@ -26,13 +26,13 @@ export default function WebsiteLombaIrcPage() {
        <Image
         src="/images/cdirc.png"
         alt="Smart Farming Project"
-        width={800}
+        width={1000}
         height={500}
         className="rounded-lg shadow-xl object-cover max-w-full"
       />
 
       <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
-        Project ini digunakan untuk profile lombva dan pendaftaran bagi peserta yang ini mengikuti lomba ini, lomba ini tingkatan nasional jadi seluruh pelajar di indonesia bisa bergabung dan menunjukkan kemampuannya masing-masing.
+        Project ini digunakan untuk profile lomba dan pendaftaran bagi peserta yang ini mengikuti lomba ini, lomba ini tingkatan nasional jadi seluruh pelajar di indonesia bisa bergabung dan menunjukkan kemampuannya masing-masing.
       </p>
     </section>
   );
