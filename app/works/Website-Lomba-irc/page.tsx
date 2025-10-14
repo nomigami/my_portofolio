@@ -31,13 +31,13 @@ export default function WebsiteLombaIrcPage() {
         className="rounded-lg shadow-xl object-cover max-w-full"
       />
 
-      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8">
+      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8 py-7">
         Project ini berfungsi sebagai profile lomba dan sebagai sarana pendaftaran, website ini dibangun dengan menggunakan Next.js dengan framework React yang terdiri dari website umum yang dimana website tersebut bisa diakses oleh semua orang, 
       </p>
-      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8">
+      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8 py-7">
         Lalu juga ada website yang hanya bisa diakses oleh panitia atau website admin yang dimana website tersebut digunakan untuk mengolah data peserta yang sudah terdaftar serta bisa digunakan untuk menabsen peserta saat registrasi.
       </p>
-      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8">
+      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center gap-8 py-7">
        website ini diredirect dengan database supabase, karena supabase jika digunakan untuk data yang diharuskan rapi dan terstruktur serta diwebsite ada fitur filtering data maka supabase sangat cocok digunakan dengan sistem keamanan yang lebih baik dibandingkan dengan firebase.
        </p>
     </section>
