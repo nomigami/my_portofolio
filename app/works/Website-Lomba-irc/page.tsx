@@ -16,7 +16,15 @@ export default function WebsiteLombaIrcPage() {
       </motion.h1>
 
       <Image
-        src="/images/smartfarming.jpg"
+        src="/images/irc.png"
+        alt="Smart Farming Project"
+        width={800}
+        height={500}
+        className="rounded-lg shadow-xl object-cover max-w-full"
+      />
+
+       <Image
+        src="/images/cdirc.png"
         alt="Smart Farming Project"
         width={800}
         height={500}
