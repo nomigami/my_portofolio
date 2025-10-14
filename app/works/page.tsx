@@ -31,7 +31,7 @@ export default function WorksPage() {
     },
      {
       title: "Website Innovation Robotic Competition - MtsN 2 Sukoharjo",
-      slug: "Website-Lomba",
+      slug: "Website-Lomba-irc",
     },
   ];
 
