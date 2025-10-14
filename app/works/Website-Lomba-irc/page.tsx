@@ -32,8 +32,14 @@ export default function WebsiteLombaIrcPage() {
       />
 
       <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
-        Project ini digunakan untuk profile lomba dan pendaftaran bagi peserta yang ini mengikuti lomba ini, lomba ini tingkatan nasional jadi seluruh pelajar di indonesia bisa bergabung dan menunjukkan kemampuannya masing-masing.
+        Project ini berfungsi sebagai profile lomba dan sebagai sarana pendaftaran, website ini dibangun dengan menggunakan Next.js dengan framework React yang terdiri dari website umum yang dimana website tersebut bisa diakses oleh semua orang, 
       </p>
+      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
+        Lalu juga ada website yang hanya bisa diakses oleh panitia atau website admin yang dimana website tersebut digunakan untuk mengolah data peserta yang sudah terdaftar serta bisa digunakan untuk menabsen peserta saat registrasi.
+      </p>
+      <p className="text-gray-300 max-w-3xl text-lg leading-relaxed text-center">
+       website ini diredirect dengan database supabase, karena supabase jika digunakan untuk data yang diharuskan rapi dan terstruktur serta diwebsite ada fitur filtering data maka supabase sangat cocok digunakan dengan sistem keamanan yang lebih baik dibandingkan dengan firebase.
+       </p>
     </section>
   );
 }
