@@ -46,7 +46,7 @@ export default function HomePage() {
             style={{
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              backgroundSize: '300% 300%',
+              backgroundSize: '100% 100%',
             }}
           >
             folio
