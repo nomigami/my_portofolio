@@ -14,8 +14,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-        >
-        </motion.p>
+        ></motion.p>
 
         {/* Untuk layar besar - satu baris */}
         <h1
@@ -31,16 +30,27 @@ export default function HomePage() {
         </h1>
 
         {/* Untuk layar kecil - dua baris */}
-        <div
-          className="block sm:hidden leading-none text-transparent bg-clip-text animate-bg-slide font-extrabold uppercase text-[20vw]"
-          style={{
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundSize: '300% 300%',
-          }}
-        >
-          <div>Porto</div>
-          <div>folio</div>
+        <div className="block sm:hidden leading-none font-extrabold uppercase text-[20vw]">
+          <div
+            className="bg-clip-text text-transparent animate-bg-slide"
+            style={{
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundSize: '300% 300%',
+            }}
+          >
+            Porto
+          </div>
+          <div
+            className="bg-clip-text text-transparent animate-bg-slide"
+            style={{
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundSize: '300% 300%',
+            }}
+          >
+            folio
+          </div>
         </div>
 
         <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl max-w-4xl text-gray-300">
