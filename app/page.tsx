@@ -13,14 +13,14 @@ export default function HomePage() {
           className="text-base sm:text-lg md:text-xl text-gray-400 mb-2"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.9 }}
         ></motion.p>
 
         {/* Untuk layar besar - satu baris */}
         <h1
           className="hidden sm:block font-extrabold uppercase leading-none bg-clip-text text-transparent animate-bg-slide"
           style={{
-            fontSize: 'clamp(3rem, 18vw, 8rem)',
+            fontSize: 'clamp(2rem, 10vw, 8rem)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundSize: '300% 300%',
