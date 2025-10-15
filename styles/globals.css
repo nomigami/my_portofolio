@@ -1,9 +1,26 @@
+/* === Animasi Gradien Bergerak untuk Teks Portofolio === */
+@keyframes bg-slide {
+  0% {
+    background-position: 0% 50%;
+    background-image: linear-gradient(270deg, #ff0000, #ff6600, #ff00ff);
+  }
+  50% {
+    background-position: 100% 50%;
+    background-image: linear-gradient(270deg, #ff6600, #00ffff, #ff0000);
+  }
+  100% {
+    background-position: 0% 50%;
+    background-image: linear-gradient(270deg, #ff0000, #ff6600, #ff00ff);
+  }
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  @apply bg-black text-white;
-  font-family: 'Inter', sans-serif;
+.animate-bg-slide {
+  background-image: linear-gradient(270deg, #ff0000, #ff6600, #ff00ff);
+  background-size: 300% 300%;
+  animation: bg-slide 6s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  will-change: background-position;
 }

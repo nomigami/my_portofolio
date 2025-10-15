@@ -22,12 +22,9 @@ export default function HomePage() {
           className="hidden sm:block font-extrabold uppercase leading-none bg-clip-text text-transparent animate-bg-slide"
           style={{
             fontSize: 'clamp(3rem, 18vw, 8rem)',
-            backgroundImage:
-              "url('/portofolio.png'), linear-gradient(to right, #ff6600, #ff3300, #9900ff)",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
+            backgroundSize: '300% 300%',
           }}
         >
           Portofolio
@@ -37,12 +34,9 @@ export default function HomePage() {
         <div
           className="block sm:hidden leading-none text-transparent bg-clip-text animate-bg-slide font-extrabold uppercase text-[20vw]"
           style={{
-            backgroundImage:
-              "url('/portofolio.png'), linear-gradient(to right, #ff6600, #ff3300, #9900ff)",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
+            backgroundSize: '300% 300%',
           }}
         >
           <div>Porto</div>
