@@ -38,12 +38,31 @@
   animation: bgSlide 20s infinite ease-in-out;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* fallback agar teks tetap terlihat */
+  will-change: background-image;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
+/* Gradient teks */
 .text-gradient {
   background: linear-gradient(90deg, #06b6d4, #3b82f6, #9333ea);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+/* Fix untuk mobile Safari dan Chrome */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.text-transparent {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
 }
 
 html, body {

@@ -99,7 +99,7 @@ export default function AboutSection() {
         </div>
 
         {/* Foto Square dengan efek hover/tap */}
-        <div className="group -ml-[100]">
+        <div className="group">
           <Image
             src="/images/daun.jpg"
             alt="Additional Photo"

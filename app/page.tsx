@@ -13,44 +13,25 @@ export default function HomePage() {
           className="text-base sm:text-lg md:text-xl text-gray-400 mb-2"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-        ></motion.p>
+          transition={{ duration: 0.6 }}
+        >
+          
+        </motion.p>
 
         {/* Untuk layar besar - satu baris */}
         <h1
           className="hidden sm:block font-extrabold uppercase leading-none bg-clip-text text-transparent animate-bg-slide"
           style={{
-            fontSize: 'clamp(2rem, 10vw, 8rem)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundSize: '100% 100%',
+            fontSize: 'clamp(3rem, 18vw, 8rem)',
           }}
         >
           Portofolio
         </h1>
 
         {/* Untuk layar kecil - dua baris */}
-        <div className="block sm:hidden leading-none font-extrabold uppercase text-[30vw]">
-          <div
-            className="bg-clip-text text-transparent animate-bg-slide"
-            style={{
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundSize: '400% 400%',
-            }}
-          >
-            Porto
-          </div>
-          <div
-            className="bg-clip-text text-transparent animate-bg-slide"
-            style={{
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundSize: '400% 400%',
-            }}
-          >
-            folio
-          </div>
+        <div className="block sm:hidden leading-none text-transparent bg-clip-text animate-bg-slide font-extrabold uppercase text-[20vw]">
+          <div>Porto</div>
+          <div>folio</div>
         </div>
 
         <p className="mt-6 text-sm sm:text-base md:text-lg lg:text-xl max-w-4xl text-gray-300">
