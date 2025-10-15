@@ -37,7 +37,7 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-bold tracking-widest bg-gradient-to-r from-gray-100 to-gray-400 bg-clip-text text-transparent"
         >
-          Sentral Robotik
+          Yoga Saputra
         </Link>
 
         {/* Desktop Menu */}
