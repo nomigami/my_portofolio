@@ -99,13 +99,13 @@ export default function AboutSection() {
         </div>
 
         {/* Foto Square dengan efek hover/tap */}
-        <div className="group">
+        <div className="group ml-10">
           <Image
             src="/images/daun.jpg"
             alt="Additional Photo"
             width={300}
             height={300}
-            className="w-full max-w-sm h-[300px] w-[300px] ml-10 object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
+            className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
           />
         </div>
       </motion.div>
