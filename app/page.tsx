@@ -20,7 +20,7 @@ export default function HomePage() {
         <h1
           className="hidden sm:block font-extrabold uppercase leading-none bg-clip-text text-transparent animate-bg-slide"
           style={{
-            fontSize: 'clamp(2rem, 10vw, 2rem)',
+            fontSize: 'clamp(2rem, 10vw, 9rem)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundSize: '300% 300%',
