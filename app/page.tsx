@@ -30,7 +30,7 @@ export default function HomePage() {
         </h1>
 
         {/* Untuk layar kecil - dua baris */}
-        <div className="block sm:hidden leading-none font-extrabold uppercase text-[10vw]">
+        <div className="block sm:hidden leading-none font-extrabold uppercase text-[30vw]">
           <div
             className="bg-clip-text text-transparent animate-bg-slide"
             style={{
