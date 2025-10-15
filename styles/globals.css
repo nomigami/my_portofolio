@@ -24,3 +24,14 @@
   text-fill-color: transparent;
   will-change: background-position;
 }
+
+/* 🔧 Tambahan: aktifkan animasi juga di mobile */
+.block.sm\:hidden.animate-bg-slide div {
+  background-image: linear-gradient(270deg, #ff0055, #ff6600, #00ffff, #6600ff);
+  background-size: 400% 400%;
+  animation: bg-slide 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
