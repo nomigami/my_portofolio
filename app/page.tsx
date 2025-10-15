@@ -36,7 +36,7 @@ export default function HomePage() {
             style={{
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              backgroundSize: '100% 100%',
+              backgroundSize: '400% 400%',
             }}
           >
             Porto
@@ -46,7 +46,7 @@ export default function HomePage() {
             style={{
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              backgroundSize: '100% 100%',
+              backgroundSize: '400% 400%',
             }}
           >
             folio
