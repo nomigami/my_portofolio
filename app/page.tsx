@@ -23,7 +23,7 @@ export default function HomePage() {
             fontSize: 'clamp(2rem, 10vw, 8rem)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            backgroundSize: '300% 300%',
+            backgroundSize: '100% 100%',
           }}
         >
           Portofolio
