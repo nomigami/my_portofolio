@@ -69,7 +69,7 @@ export default function AboutSection() {
             {[
               'Studying Of Duta Bangsa University',
               'Informatics Engineering',
-              'Basic Internet Of Things',
+              'IOT Enthusiasts',
             ].map((text, index) => (
               <motion.div
                 key={index}
