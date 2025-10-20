@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { FaDeviantart } from 'react-icons/fa';
 
 const container = {
   hidden: {},

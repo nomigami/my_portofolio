@@ -20,10 +20,10 @@ export default function HomePage() {
         <h1
           className="hidden sm:block font-extrabold uppercase leading-none bg-clip-text text-transparent animate-bg-slide"
           style={{
-            fontSize: 'clamp(3rem, 18vw, 8rem)',
+            fontSize: 'clamp(5rem, 18vw, 10rem)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            backgroundSize: '300% 300%',
+            backgroundSize: '100% 100%',
           }}
         >
           Portofolio
