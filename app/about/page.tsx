@@ -68,7 +68,7 @@ export default function AboutSection() {
 
           <motion.div className="space-y-4">
             {[
-              'Studying Of Duta Bangsa University',
+              'Graduate of Duta Bangsa University',
               'Informatics Engineering',
               'IOT Enthusiasts',
             ].map((text, index) => (
@@ -86,7 +86,7 @@ export default function AboutSection() {
 
       {/* Bagian Bawah - Deskripsi dan Foto Square */}
       <motion.div
-        className="flex flex-col md:flex-row items-center md:items-start justify-between gap-16"
+        className="flex flex-col md:flex-row items-center md:items-start justify-between gap-16 px-2 py-2"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -94,7 +94,7 @@ export default function AboutSection() {
       >
         {/* Deskripsi */}
         <div className="flex-1 max-w-2xl text-left">
-          <motion.p className="text-base sm:text-lg text-gray-300 leading-relaxed">
+          <motion.p className="text-base sm:text-lg text-gray-300 leading-relaxed gap-26 py- 10 px-19">
             I am passionate about the intersection of creativity and technology. My journey in Informatics Engineering is driven by a deep curiosity to build innovative solutions. I believe in lifelong learning, teamwork, and making an impact through digital products.
           </motion.p>
         </div>
