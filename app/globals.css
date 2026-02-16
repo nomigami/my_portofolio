@@ -2,69 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animasi teks masuk dari bawah */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.fade-in-up {
-  animation: fadeInUp 5s ease-out forwards;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Animasi background gambar berganti */
-@keyframes bgSlide {
-  0% {
-    background-image: url('/images/daun.jpg');
-  }
-  33% {
-    background-image: url('/images/jalan.jpg');
-  }
-  66% {
-    background-image: url('/images/daun2.jpg');
-  }
-  100% {
-    background-image: url('/images/gunung.jpg');
-  }
-}
-
-.animate-bg-slide {
-  animation: bgSlide 20s infinite ease-in-out;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white; /* fallback agar teks tetap terlihat */
-  will-change: background-image;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-/* Gradient teks */
+/* Custom gradient text utility */
 .text-gradient {
-  background: linear-gradient(90deg, #06b6d4, #3b82f6, #9333ea);
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-}
-
-/* Fix untuk mobile Safari dan Chrome */
-.bg-clip-text {
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-.text-transparent {
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-html, body {
-  transition: background 0.4s ease;
 }
