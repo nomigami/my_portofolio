@@ -38,11 +38,11 @@ export default function AboutSection() {
           viewport={{ once: true }}
         >
           <Image
-            src="/images/p.jpg"
+            src="/images/pp.jpeg"
             alt="About Me"
-            width={300}
-            height={300}
-            className="w-full max-w-sm h-[300px] w-[300px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
+            width={500}
+            height={500}
+            className="w-full max-w-sm h-[500px] w-[300px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out rounded shadow-lg"
           />
         </motion.div>
 
@@ -66,11 +66,13 @@ export default function AboutSection() {
             impactful experiences
           </motion.h2>
 
-          <motion.div className="space-y-4">
+          <motion.div className="space-y-7">
             {[
               'Graduate of Duta Bangsa University',
               'Informatics Engineering',
               'IOT Enthusiasts',
+              'Robotics Enthusiasts',
+              'Robotics Instructor',
             ].map((text, index) => (
               <motion.div
                 key={index}
