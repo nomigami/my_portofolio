@@ -38,7 +38,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
         >
           <Image
-            src="/images/yoga4.jpg"
+            src="/images/p.jpg"
             alt="About Me"
             width={300}
             height={300}
