@@ -11,7 +11,7 @@ export default function WorksPage() {
     { title: "Monitoring Website with HTML + CSS", slug: "htmlcss-monitoring" },
     { title: "Website Product with Next.js", slug: "product-nextjs" },
     { title: "Freelance Pengajar Robotik - Sentral Robotik.id", slug: "freelance" },
-    { title: "Website Innovation Robotic Competition - MTsN 2 Sukoharjo", slug: "website-lomba-irc" },
+    { title: "Website Innovation Robotic Competition - MTsN 2 Sukoharjo", slug: "Website-Lomba-irc" },
     { title: "Website Colomadu Archery Club, Club Memanah Solo raya", slug: "website-CAC" },
   ];
 
